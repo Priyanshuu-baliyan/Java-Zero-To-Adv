@@ -1,3 +1,4 @@
+package Variable_And_DataStructure;
 public class BasicPattern {
   public static void main(String[] args) {
     System.out.println("****");
