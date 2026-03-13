@@ -26,6 +26,7 @@ public class LoopBasics {
     int counter = 1;
     do{
       System.out.println("I'm Batman");
+      counter++;
     } while(counter <= 10);
   }
 }
