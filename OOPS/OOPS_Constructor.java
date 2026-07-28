@@ -10,9 +10,9 @@ public class OOPS_Constructor {
     c1.marks[1] = 97;
     c1.marks[2] = 100;
 
-    Constructor c2 = new Constructor(c1);
+    Constructor c2 = new Constructor(c1); // copy
     c2.password = "xyzqw";
-    c2.marks[1] = 98;
+    c1.marks[1] = 99;
     for(int i = 0; i < 3; i++){
       System.out.println(c2.marks[i]);
     }
@@ -24,13 +24,23 @@ class Constructor{
   String password;
   int marks[];
 
-  //copy constructor
+  //shallow copy constructor
+  // Constructor(Constructor c1){
+  //   this.name = c1.name;
+  //   this.roll = c1.roll;
+  //   marks = new int[3];
+  //   this.marks = c1.marks;
+
+  // }
+
+  // deep copy constructor
   Constructor(Constructor c1){
     this.name = c1.name;
     this.roll = c1.roll;
     marks = new int[3];
-    this.marks = c1.marks;
-
+    for (int i = 0; i < marks.length; i++) {
+        this.marks[i] = c1.marks[i];
+    }
   }
 
   Constructor(){
