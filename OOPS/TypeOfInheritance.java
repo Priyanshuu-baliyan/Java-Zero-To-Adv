@@ -2,9 +2,14 @@ package OOPS;
 
 public class TypeOfInheritance{
   public static void main(String [] args){
-    mammal human = new mammal();
-    human.eat();
-    human.walk();
+    // mammal human = new mammal();
+    // human.eat();
+    // human.walk();
+
+    Peacock peacock = new Peacock();
+    peacock.fact();
+    peacock.color = "Blue and Green feather";
+    System.out.println(peacock.color);
   }
 
 }
@@ -35,5 +40,23 @@ class Fish extends Animals{
 class Bird extends Animals{
   void fly(){
     System.out.println("Fly");
+  }
+}
+
+class Shark extends Fish{
+  void danger(){
+    System.out.println("dangerous");
+  }
+}
+
+class Peacock extends Bird{
+  void fact(){
+    System.out.println("National Bird Of INDIA");
+  }
+}
+
+class Cat extends mammal{
+  void sound(){
+    System.out.println("Meowwwwwww!");
   }
 }
