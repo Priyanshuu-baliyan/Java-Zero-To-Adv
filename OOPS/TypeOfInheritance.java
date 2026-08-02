@@ -2,12 +2,9 @@ package OOPS;
 
 public class TypeOfInheritance{
   public static void main(String [] args){
-    Dog hulk = new Dog();
-    hulk.breed = "Pitbull";
-    hulk.legs = 4;
-    hulk.eat();
-    System.out.println(hulk.breed);
-    System.out.println(hulk.legs);
+    mammal human = new mammal();
+    human.eat();
+    human.walk();
   }
 
 }
@@ -24,9 +21,19 @@ class Animals{
 }
 
 class mammal extends Animals{
-  int legs;
+  void walk(){
+    System.out.println("Walks");
+  }
 }
 
-class Dog extends mammal{
-  String breed;
+class Fish extends Animals{
+  void swim(){
+    System.out.println("Swim");
+  }
+}
+
+class Bird extends Animals{
+  void fly(){
+    System.out.println("Fly");
+  }
 }
