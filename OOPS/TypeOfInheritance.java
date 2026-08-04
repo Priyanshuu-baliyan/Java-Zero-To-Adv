@@ -10,6 +10,10 @@ public class TypeOfInheritance{
     peacock.fact();
     peacock.color = "Blue and Green feather";
     System.out.println(peacock.color);
+
+    Cat cat = new Cat();
+    cat.eat();
+    cat.breathe();
   }
 
 }
