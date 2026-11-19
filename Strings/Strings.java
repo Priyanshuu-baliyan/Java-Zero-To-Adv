@@ -1,6 +1,6 @@
 package Strings;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class Strings {
 	public static void main(String[] args) {
